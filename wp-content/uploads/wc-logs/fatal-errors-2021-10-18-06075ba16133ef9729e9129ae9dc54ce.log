@@ -1,0 +1,4 @@
+2021-10-18T14:07:47+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\megamenu\classes\widget-manager.class.php en la línea 3
+
+2021-10-18T19:48:28+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\advanced-custom-fields-pro\includes\locations\class-acf-location-post-category.php en la línea 3
+

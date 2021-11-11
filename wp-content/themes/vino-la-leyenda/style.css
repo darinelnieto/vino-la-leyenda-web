@@ -1,0 +1,494 @@
+/*!
+Theme Name: Vino-la-leyenda
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: vino-la-leyenda
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Vino-la-leyenda is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+html, body{
+	overflow-x: hidden;
+}
+a, a:hover{
+	text-decoration: none !important;
+}
+/*=============================Style Header=======================*/
+header{
+	position: absolute;
+    z-index: 100;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    height: 60px;
+    top: 70px;
+}
+.logoHeader{
+	width: 84px;
+    position: absolute;
+    top: -33px;
+}
+.alinea-row{
+	align-items: center;
+}
+@media(max-width:768px){
+	.logoHeader{
+		position: relative;
+		width: 100%;
+		max-width: 90px !important;
+		top: 0;
+	}
+	header{
+		position: relative;
+		top:0;
+		background: black;
+	}
+}
+/*=======================style banner==========================*/
+.owl-carousel.movil{
+	display: none;
+}
+@media(max-width:768px){
+	.owl-carousel.movil{
+		display: block;
+	}
+	.owl-carousel.desktop{
+		display: none;
+	}
+}
+/*=======================Style seccion uno=========================*/
+.seccionUno{
+	background: black;
+	padding: 40px 0;
+}
+.borderDorado{
+	border:2px solid #efcb80;
+	padding: 20px;
+}
+.h3.tituloProducDorado{
+	color:#efcb80;
+}
+.h3.titulovinotintoseccionuno{
+	color:#75132c;
+	text-align: center;
+}
+.infoSeccionUnoBlanco{
+	color:white;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 100% !important;
+}
+.tituloProduct{
+	color:#75132c;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.imgProduct{
+	max-height: 287px;
+    position: relative;
+    overflow: hidden;
+}
+@media(max-width:768px){
+	.borderDorado{
+		padding: 3rem 0;
+		border:none;
+	}
+}
+/*========================== style seccion historia video ====================*/
+.historyContent{
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.fondoVinoTintoHistori{
+	background:rgba(117, 19, 42, .8);
+}
+.alinea-row{
+	align-items: center;
+}
+.contentimgmodal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.contentimgmodal::before{
+	content:'';
+	display: block;
+	width: 90%;
+    height: 89%;
+    top: 5.5%;
+    left: 5.4%;
+	position: absolute;
+	z-index: 20;
+	border:1px solid #efcb80;
+}
+.iconoPlayVideoModal{
+	width: 80px;
+	position: absolute;
+	left: 42%;
+    top: 37%;
+}
+.imgVideoModal{
+	width: 100%;
+}
+.colorGolden{
+	color:#efcb80 !important;
+}
+.infoHistoria{
+	color: white;
+}
+.modal-content{
+	background: transparent !important;
+	border: none !important;
+	padding: 0 !important;
+	margin: 28% auto !important;
+}
+.modal-body{
+	padding: 0 !important;
+}
+.contentimgmodal:hover .iconoPlayVideoModal{
+	transform: scale(1.2);
+	transition: 1s;
+}
+.close{
+	color:white !important;
+	font-weight: 500 !important;
+    text-shadow: none !important;
+	opacity: none !important;
+}
+@media(max-width:768px){
+	.historyContent{
+		background-position: center;
+		background-size: cover;
+	}
+	.iconoPlayVideoModal{
+		left: 37%;
+    	top: 27% !important;
+	}
+}
+/*==================== style sección form blog ====================*/
+.contentSeccionContactoBlog{
+	display:flex;
+	background: black;
+	align-items: center;
+}
+.blog{
+	width: 40%;
+}
+.contacto{
+	width:50%;
+	background-size: 100% auto;
+    border-radius: 0 200px 200px 0;
+	position: relative;
+    overflow: hidden;
+}
+.formSubscripcion{
+	background: rgba(0, 0, 0, .4);
+	padding: 6% 0;
+}
+input[type="text"], input[type="tel"], input[type="email"]{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #efcb80;
+	color:#efcb80;
+	outline: none;
+}
+input::-webkit-input-placeholder{
+	color:#efcb80;
+}
+.wpcf7-list-item{
+	margin: 0;
+}
+label{
+	color:white;
+}
+input[type="submit"]{
+	background: #74142a;
+    border: none;
+    padding: 1% 16%;
+	color:#efcb80;
+	outline: none;
+}
+.postBlogHome{
+	border: 2px solid #efcb80;
+	padding: 2%;
+}
+.imgPostHome{
+	width: 90%;
+}
+.tituloPostHome{
+	color:#efcb80;
+	text-align: center;
+	font-size: 15px;
+}
+.suscribete{
+	color:#efcb80;
+	text-align: center;
+}
+.infoPostHome{
+	color: white;
+	font-size: 11px;
+}
+.btn-verMasPost{
+	background: #74142a;
+	color:#efcb80;
+	padding: 1% 16%;
+}
+.btn-verMasPost:hover{
+	filter: brightness(70%);
+	text-decoration: none;
+	color:#efcb80;
+}
+.card.contentProductCard{
+	border-radius: 8px;
+}
+.imgProduct > a > img{
+	border-radius:8px 8px 0 0;
+}
+.btn-addTocart > .button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+	background: #efcb80;
+	border:none;
+	color:#000;
+	width: 100%;
+	border-radius: 0px;
+}
+.descripcion{
+	color:#000;
+}
+@media(max-width:768px){
+	.contentSeccionContactoBlog{
+		display: block;
+	}
+	.contacto{
+		width: 100%;
+		border-radius: 0;
+		background-size: cover;
+		background-position: center;
+	}
+	.blog{
+		width: 100%;
+		padding: 3rem 0;
+	}
+	.wpcf7-spinner{
+		display: none;
+	}
+}
+/*=============================Style Footer=====================*/
+footer{
+	min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.content-footer{
+	min-height: 400px;
+	background: rgba(0,0,0,.7);
+	padding: 4% 0;
+}
+.h3.tituloContacto{
+	color: #efcb80;
+	position: relative;
+}
+.h3.tituloContacto::before{
+	content:'';
+	display: block;
+	width: 70px;
+	border-bottom: 2px solid #efcb80;
+	position: absolute;
+    bottom: -10px;
+    left: 11%;
+}
+.contactoFooter, .contactoFooter > a, .contactoFooter > a:hover, .infoEnvios{
+	color: white;
+	margin-bottom: 0;
+	text-decoration: none;
+}
+.h3.tituloSiguenos{
+	color: #efcb80;
+	position: relative;
+}
+.h3.tituloSiguenos::before{
+	content:'';
+	display: block;
+	width: 70px;
+	border-bottom: 2px solid #efcb80;
+	position: absolute;
+    bottom: -10px;
+    left: 38%;
+}
+.redesSociales{
+	width: 70px;
+}
+.redesSociales:hover{
+	filter: brightness(70%);
+}
+.h3.tituloEnvios{
+	color: #efcb80;
+	position: relative;
+	text-align: center;
+}
+.h3.tituloEnvios::before{
+	content: '';
+    display: block;
+    width: 63px;
+    border-bottom: 2px solid #efcb80;
+    position: absolute;
+    bottom: -10px;
+    left: 41%;
+}
+.imgPasarela{
+	width:100%;
+}
+.item.pagos{
+	width: 200px !important;
+	margin: 0 auto !important;
+}
+.copyrightContent{
+	background: #74142a;
+}
+.copyR{
+	color: #efcb80;
+	font-weight: 700;
+}
+.sliderPagos{
+	border: 1px solid #efcb80;
+    padding: 3% 0;
+}
+.h4.metodoTitleSlider{
+	color: #efcb80;
+}
+@media(max-width:768px){
+	.h3.tituloContacto::before{
+		left: 40%;
+	}
+}
+/*======================= style post entrada =========================*/
+.bannerPost{
+	min-height: 400px;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	padding: 12% 0;
+}
+.entry-title{
+	color:white;
+}
+.imagenPost{
+	width: 100%;
+}
+.parrafosPost > p{
+	color:white
+}
+.content-post{
+	background-attachment: fixed !important;
+	height: auto;
+	margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.content-post > .container{
+	position: relative;
+    top: 19%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*===================== style Single product ====================*/
+.contentProduct{
+	background-size: contain;
+}
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images{
+	width: 100% !important;
+}
+.productDescriptionSingle{
+	margin-bottom: 0;
+	color: white;
+	text-align: left;
+}
+.tituloSigleProduct{
+	color: #efcb80;
+}
+.single_add_to_cart_button.button.alt{
+	background-color: #74142a !important;
+	color: #efcb80 !important;
+	border-radius: 0px;
+	outline: none;
+}
+.cart{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 1rem;
+}
+.input-text.qty.text{
+	background: transparent;
+    color: #efcb80;
+    border: 1px solid #efcb80;
+	outline: none;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+	color: #74142a !important;
+	text-align: left;
+	font-weight: bold;
+}
+.product_meta{
+	display: none;
+}
+.woocommerce-product-details__short-description{
+	display: none;
+}
+/*======================== Style Nosotros ========================*/
+.img-vino-rose{
+	width: 100%;
+}
+.image-person{
+	width: 150px;
+	height: 150px;
+	background-size: 100% !important;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.content-about{
+	background: #000;
+}
+.titulo-nosotros{
+	color: #efcb80;
+}
+.nav-link{
+	color: white !important;
+}
+.nav-link.active{
+	background-color: transparent !important;
+	border-radius: 0 !important;
+	color:#efcb80 !important;
+	border-bottom: 1px solid #efcb80;
+}
+.info-nosotros{
+	color:white;
+}
+.movil-banner-nosotros{
+	display: none;
+}
+.tab-content{
+	min-height: 100vh;
+}
+@media(max-width:768px){
+	.desktop-banner-nosotros{
+		display: none;
+	}
+	.movil-banner-nosotros{
+		display: block;
+	}
+}

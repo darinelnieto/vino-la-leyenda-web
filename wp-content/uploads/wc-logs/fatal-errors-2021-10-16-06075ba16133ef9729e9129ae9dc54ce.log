@@ -1,0 +1,10 @@
+2021-10-16T15:52:47+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\advanced-custom-fields-pro\pro\locations\class-acf-location-options-page.php en la línea 3
+
+2021-10-16T16:43:42+00:00 CRITICAL Uncaught Error: Call to undefined function get_fiedl() in C:\xampp\htdocs\vino-la-leyenda\wp-content\themes\vino-la-leyenda\home-template.php:60
+Stack trace:
+#0 C:\xampp\htdocs\vino-la-leyenda\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vino-la-leyenda\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vino-la-leyenda\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown en C:\xampp\htdocs\vino-la-leyenda\wp-content\themes\vino-la-leyenda\home-template.php en la línea 60
+

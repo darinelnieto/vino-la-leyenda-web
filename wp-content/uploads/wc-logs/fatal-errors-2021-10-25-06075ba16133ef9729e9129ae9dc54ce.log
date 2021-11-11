@@ -1,0 +1,10 @@
+2021-10-25T01:20:33+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::title() in C:\xampp\htdocs\vino-la-leyenda\wp-content\themes\vino-la-leyenda\woocommerce\content-single-product.php:41
+Stack trace:
+#0 C:\xampp\htdocs\vino-la-leyenda\wp-includes\template.php(772): require()
+#1 C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(598): wc_get_template_part('content', 'single-product')
+#3 C:\xampp\htdocs\vino-la-leyenda\wp-includes\shortcodes.php(356): WC_Shortcodes::product_page(Array, '', 'product_page')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\vino-la-leyenda\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(produc...', 'do_shortcode_ta...', '[product_page i...')
+#6 C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\woocommerce\includes\class-wc-template-loader.php(555): do_shortcode(' en C:\xampp\htdocs\vino-la-leyenda\wp-content\themes\vino-la-leyenda\woocommerce\content-single-product.php en la línea 41
+
