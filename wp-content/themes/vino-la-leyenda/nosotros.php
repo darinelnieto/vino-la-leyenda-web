@@ -34,16 +34,16 @@ $video_imagen = get_field('contenido_izquierda');
     </div>
     <!-- fin seccion uno -->
     <div class="container">
-        <div class="row alinea-row">
+        <div class="row alinea-row pb-5">
             <div class="col-12 col-lg-6">
                 <?php if($video_imagen['es_un_video'] === true){ ?>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/<?php echo $video_imagen['video'] ?>?controls=1&autoplay=1&mute=1&loop=1&playlist=<?php echo $video_imagen['video'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="317" src="https://www.youtube.com/embed/<?php echo $video_imagen['video'] ?>?controls=1&autoplay=1&mute=1&loop=1&playlist=<?php echo $video_imagen['video'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <?php }else{ ?>
                     <img src="<?php echo $video_imagen['imagen_vino'] ?>" alt="Imagen del vino rose" class="img-vino-rose">
                 <?php } ?>
             </div>
-            <div class="col-12 col-lg-6">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <?php if($content_corporativo){
                         foreach($content_corporativo as $item){ ?>
                             <?php if($item['activo'] === true){ ?>

@@ -1,4 +1,0 @@
-2021-10-24T14:41:08+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\megamenu\classes\pages\locations.php en la línea 3
-
-2021-10-24T14:41:10+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\vino-la-leyenda\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\StoreApi\Routes\Cart.php en la línea 9
-

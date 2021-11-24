@@ -32,13 +32,22 @@ if ( post_password_required() ) {
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+	<div class="banner-post">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2 class="titulo-single-product"><?php echo $product->get_title(); ?></h2>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
-		<div class="row alinea-row">
+		<div class="row mt-5 alinea-row">
 			<div class="col-12 col-lg-6">
 				<?php do_action( 'woocommerce_before_single_product_summary' ); ?>
 			</div>
-			<div class="col-12 col-lg-6 text-center" style="background:rgba(0, 0, 0, .6);">
-				<h2 class="tituloSigleProduct mb-4"><?php echo $product->get_title(); ?></h2>
+			<div class="col-12 col-lg-6 text-center" style="background:rgba(0, 0, 0, .6); border: double #efcb80;">
+				<h2 class="tituloSigleProduct mb-4">Detalles del producto</h2>
 				<p class="productDescriptionSingle mb-4"><?php echo $product->get_description(); ?></p>
 				<?php do_action( 'woocommerce_single_product_summary' ); ?>
 			</div>

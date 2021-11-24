@@ -75,14 +75,14 @@ header{
 	padding: 40px 0;
 }
 .borderDorado{
-	border:2px solid #efcb80;
+	border:double #efcb80;
 	padding: 20px;
 }
 .h3.tituloProducDorado{
 	color:#efcb80;
 }
 .h3.titulovinotintoseccionuno{
-	color:#75132c;
+	color:#efcb80;
 	text-align: center;
 }
 .infoSeccionUnoBlanco{
@@ -239,7 +239,7 @@ input[type="submit"]{
 }
 .infoPostHome{
 	color: white;
-	font-size: 11px;
+	font-size: 13px;
 }
 .btn-verMasPost{
 	background: #74142a;
@@ -266,6 +266,9 @@ input[type="submit"]{
 }
 .descripcion{
 	color:#000;
+}
+.wpcf7-spinner{
+	display: none;
 }
 @media(max-width:768px){
 	.contentSeccionContactoBlog{
@@ -421,8 +424,8 @@ footer{
 	color: #efcb80;
 }
 .single_add_to_cart_button.button.alt{
-	background-color: #74142a !important;
-	color: #efcb80 !important;
+	background-color:#efcb80 !important;
+	color: #74142a  !important;
 	border-radius: 0px;
 	outline: none;
 }
@@ -437,9 +440,10 @@ footer{
     color: #efcb80;
     border: 1px solid #efcb80;
 	outline: none;
+	height: 36px;
 }
 .woocommerce div.product p.price, .woocommerce div.product span.price{
-	color: #74142a !important;
+	color: #efcb80 !important;
 	text-align: left;
 	font-weight: bold;
 }
@@ -447,6 +451,18 @@ footer{
 	display: none;
 }
 .woocommerce-product-details__short-description{
+	display: none;
+}
+.banner-post{
+	min-height: 300px;
+	background: rgb(116 20 42 / 90%);;
+	padding: 9% 0;
+	border-bottom: 1px solid #efcb80;
+}
+.titulo-single-product{
+	color:#efcb80;
+}
+.woocommerce-message{
 	display: none;
 }
 /*======================== Style Nosotros ========================*/
@@ -483,6 +499,11 @@ footer{
 }
 .tab-content{
 	min-height: 100vh;
+	background: rgba(0,0,0, .2);
+	padding: 15px;
+}
+.tab-content ol{
+	padding: 0 15px;
 }
 @media(max-width:768px){
 	.desktop-banner-nosotros{
