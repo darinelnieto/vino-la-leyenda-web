@@ -34,7 +34,7 @@ header{
     width: 100%;
     background: rgba(0,0,0,.5);
     height: 60px;
-    top: 70px;
+    top: 30px;
 }
 .logoHeader{
 	width: 84px;
@@ -520,10 +520,35 @@ footer{
 	padding: 9% 0;
 	border-bottom: 1px solid #efcb80;
 }
+.bannerBlog h2{
+	color: #efcb80;
+}
+.fondo-blog-content{
+	background: #000;
+}
+.post-content{
+	background-attachment: fixed;
+	height: auto;
+	margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+	width: 100%;
+}
 .content-image-post{
 	height: 200px;
 	width: 100%;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
+	border-radius: 3px 3px 0 0;
+}
+.titulo-post-blog{
+	color:#74142a;
+	text-align: center;
+	font-size: 18px;
+	min-height: 40px;
+}
+.description-card-post{
+	color:black;
 }
