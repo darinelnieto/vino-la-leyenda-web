@@ -103,7 +103,7 @@
     <section>
         <div class="contentSeccionContactoBlog pt-5 pb-5">
             <div class="container">
-                <div class="row pt-lg-5 pb-lg-5">
+                <div class="row alinea-row pt-lg-5 pb-lg-5">
                     <div class="col-12 col-lg-6">
                         <h5 class="suscribete">SUSCRÍBETE</h5>
                         <?php echo do_shortcode('[contact-form-7 id="92" title="Formulario de contacto 1"]'); ?>

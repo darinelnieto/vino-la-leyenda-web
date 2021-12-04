@@ -42,7 +42,7 @@ if ( post_password_required() ) {
 		</div>
 	</div>
 	<div class="container">
-		<div class="row mt-5 alinea-row">
+		<div class="row mt-5 content-single-product-detail">
 			<div class="col-12 col-lg-6">
 				<?php do_action( 'woocommerce_before_single_product_summary' ); ?>
 			</div>
