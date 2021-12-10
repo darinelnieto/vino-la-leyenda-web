@@ -9,10 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<article id="post-<?php the_ID(); ?>" class="checkout-content" style="background:url(<?php echo get_field('fondo_post', 'option') ?>) #000">
 
 	<?php vino_la_leyenda_post_thumbnail(); ?>
 

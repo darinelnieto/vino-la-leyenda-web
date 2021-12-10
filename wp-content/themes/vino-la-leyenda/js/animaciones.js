@@ -20,3 +20,7 @@ $('.contentProductCard').mouseout(function(){
 $('.openModalVideo').on('click', function(){
     $('.iframe')[0].src += "?&autoplay=1";
 });
+$('.show-cart-mini').on('click', function(e){
+    $('.xoo-wsc-modal').addClass('xoo-wsc-cart-active');
+    e.preventDefault();
+});

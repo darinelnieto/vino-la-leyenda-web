@@ -4,21 +4,23 @@
 */
 get_header();
 $fondo = get_field('fondo_post', 'option');
+$conten_contact = get_field('contenido_contacto');
 ?>
 <section style="background:url(<?php echo $fondo ?>) #74142a">
     <div class="banner-contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="title-contact-view">Contacto</h2>
-                </div>
-            </div>
+        <div class="banner-contact desktop">
+            <img src="<?php echo get_field('banner')['url'] ?>" alt="<?php echo get_field('banner')['title'] ?>">
+        </div>
+        <div class="banner-contact movil">
+            <img src="<?php echo get_field('banner_movil')['url'] ?>" alt="<?php echo get_field('banner_movil')['title'] ?>">
         </div>
     </div>
     <div class="content-form-and-map">
         <div class="container">
             <div class="row mt-5 pb-5">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 content-form-contact">
+                    <h3 class="title-contact"><?php echo $conten_contact['titulo'] ?></h3>
+                    <p class="information-contact-form"><?php echo $conten_contact['informacion'] ?></p>
                     <?php echo do_shortcode('[contact-form-7 id="229" title="contacto"]'); ?>
                 </div>
                 <div class="col-12 col-md-6">

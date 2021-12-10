@@ -96,6 +96,9 @@ header .logoHeader{
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
 	width: 100% !important;
 }
+.added_to_cart.wc-forward{
+	display: none !important;
+}
 .tituloProduct{
 	color:#75132c;
 	text-transform: uppercase;
@@ -203,14 +206,21 @@ header .logoHeader{
 	background: rgba(0, 0, 0, .4);
 	padding: 6% 0;
 }
-input[type="text"], input[type="tel"], input[type="email"]{
+input[type="text"], input[type="tel"], input[type="email"], textarea{
 	background: transparent;
 	border: none;
 	border-bottom: 2px solid #efcb80;
 	color:#efcb80;
-	outline: none;
+	outline: none !important;
+	width: 100%;
+	margin-top: 1rem !important;
+	padding: 0 15px;
 }
-input::-webkit-input-placeholder{
+textarea{
+	height: 100px;
+	margin-top: 1rem !important;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 	color:#efcb80;
 }
 .wpcf7-list-item{
@@ -505,6 +515,25 @@ footer{
 .movil-banner-nosotros{
 	display: none;
 }
+.desktop-banner-nosotros::before{
+	content:"NOSOTROS";
+	position:absolute;
+	display: block;
+	color:white;
+	left: 45%;
+    top: 35%;
+	transform: translate(-23%, -5%);
+    font-size: 2rem;
+}
+.movil-banner-nosotros::before{
+	content:"CONTACTO";
+	position:absolute;
+	color:white;
+	display: none;
+	left: 28%;
+    top: 24%;
+    font-size: 2rem;
+}
 .tab-content{
 	min-height: 100vh;
 	background: rgba(0,0,0, .4);
@@ -514,17 +543,17 @@ footer{
 	padding: 0 15px;
 }
 @media(max-width:768px){
-	.desktop-banner-nosotros{
+	.desktop-banner-nosotros, .desktop-banner-nosotros::before{
 		display: none;
 	}
-	.movil-banner-nosotros{
+	.movil-banner-nosotros, .movil-banner-nosotros::before{
 		display: block;
 	}
 }
 /*======================= style Blog ============================*/
 .bannerBlog{
 	min-height: 300px;
-	background: rgb(116 20 42 / 90%);;
+	background: rgb(116 20 42 / 90%);
 	padding: 9% 0;
 	border-bottom: 1px solid #efcb80;
 }
@@ -561,13 +590,141 @@ footer{
 	color:black;
 }
 /*================== style Contacto ==========================*/
-.banner-contacto{
-	min-height: 300px;
-	background: rgb(239 204 128 / 90%);
-    padding: 9% 0;
-	border-bottom: 1px solid #74142a;
-	box-shadow: 0 2px 10px -4px #222;
+.banner-contact.desktop img{
+	width: 100%;
+}
+.banner-contact.desktop::before{
+	content:"CONTACTO";
+	position:absolute;
+	display: block;
+	color:white;
+	left: 45%;
+    top: 35%;
+	transform: translate(-23%, -5%);
+    font-size: 2rem;
+}
+.banner-contact.movil::before{
+	content:"CONTACTO";
+	position:absolute;
+	color:white;
+	display: none;
+	left: 28%;
+    top: 24%;
+    font-size: 2rem;
+}
+.banner-contact.movil img{
+	width: 100%;
+	display: none;
 }
 .title-contact-view{
+	color:#fff;
+	text-transform: uppercase;
+}
+.title-contact{
+	color:#efcb80;
+	text-align: center;
+}
+.information-contact-form{
+	color:white;
+}
+.content-form-contact{
+	background: rgba(0, 0, 0, .6);
+	border-radius: 4px;
+}
+.submit-contact input[type="submit"]{
+	background: #efcb80;
+	color: #74142a;
+	margin-top: 1rem;
+}
+input[type="submit"]{
+	cursor: pointer;
+}
+.xoo-wsc-basket, .xoo-wsc-ft-btn.button.btn.xoo-wsc-ft-btn-cart, .xoo-wsc-ft-btn.button.btn.xoo-wsc-cart-close.xoo-wsc-ft-btn-continue{
+	display:none !important;
+}
+.xoo-wsc-ft-btn.button.btn.xoo-wsc-ft-btn-checkout{
+	background: #efcb80;
+	color: #74142a;
+}
+.show-cart-mini, .show-cart-mini:hover{
+	color:#efcb80;
+}
+.xoo-wsc-header, .xoo-wsc-footer{
+	background: #000;
+	color: #efcb80;
+}
+.xoo-wsc-body{
+	background: #000;
+	color:white !important;
+}
+.xoo-wsc-product{
+	border-bottom: 1px solid #efcb80;
+}
+.xoo-wsc-pname a, .xoo-wsc-body, .xoo-wsc-body span.amount, .xoo-wsc-body a{
+	color:white !important;
+}
+.entry-footer{
+	display: none;
+}
+.woocommerce-input-wrapper{
+	width: 100%;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+	border:none;
+    border-bottom: 2px solid #efcb80;
+    border-radius: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border-color: #efcb80 transparent transparent transparent;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border-color: transparent transparent #efcb80 transparent;
+}
+.select2-selection__rendered{
+	color: #efcb80 !important;
+}
+@media(max-width:768px){
+	.banner-contact.desktop img, .banner-contact.desktop::before{
+		display:none;
+	}
+	.banner-contact.movil img, .banner-contact.movil::before{
+		display: block;
+	}
+}
+.woocommerce-form-coupon-toggle{
+	display: none;
+}
+/*=============== style ckeckout =======================*/
+.checkout-content{
+	background-attachment: fixed !important;
+	padding-bottom: 3rem;
+}
+label{
+	margin-bottom: 0 !important;
+}
+.woocommerce form .form-row .required{
 	color:#74142a;
+}
+.button.alt{
+	background: #efcb80 !important;
+	outline: none;
+	color:#74142a !important;
+	border-radius: 0 !important;
+}
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select{
+	border-color:#efcb80;
+}
+.content-form-checkout{
+	background:rgba(255,255,255, 0.11);
+	border-radius: 4px;
+}
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment, .shop_table.woocommerce-checkout-review-order-table{
+	background: rgb(116 20 42 / 70%);
+}
+tr, #order_review_heading, .woocommerce-additional-fields h3, .woocommerce-billing-fields h3, .woocommerce-privacy-policy-text p{
+	color:white !important;
+}
+.woocommerce-privacy-policy-link, .woocommerce-privacy-policy-link:hover{
+	color: #efcb80;
 }

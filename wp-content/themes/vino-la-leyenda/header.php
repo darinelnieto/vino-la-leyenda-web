@@ -48,8 +48,8 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div>
-				<div class="col-12 col-lg-3 searchContent">
-
+				<div class="col-12 col-lg-3 text-right">
+					<a href="" class="show-cart-mini"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 		</div>
