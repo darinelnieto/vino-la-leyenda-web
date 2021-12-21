@@ -96,7 +96,7 @@
     <!-- fin sección dos video historia -->
     <?php 
         $fondoContact = get_field('contacto_blog', 'option');
-        $args = array("posts_per_page" => 1, "orderby" => "rand");
+        $args = array("posts_per_page" => 1, "orderby" => "desc");
         $my_posts = get_posts($args);
     ?>
     <!-- sección contacto y blog -->
